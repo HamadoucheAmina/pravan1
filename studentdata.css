@@ -1,0 +1,173 @@
+html, body{
+    background-color: #fdf7f2;
+    /*background-color: #0d3f15;*/
+    margin: 0px;
+    padding: 0px;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    font-family: 'Roboto Mono', monospace;
+}
+header{
+    height: 50px;
+    width: 100%;
+    position: fixed;
+    margin: 0px;
+    /*background-color: #a15517;*/
+    background-color: #191919;
+    /*background-color: #0d3f15;*/
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    z-index: 1;
+}
+header > p{
+    margin: 0px;
+    width: 75%;
+    margin-left: 17%;
+    float: left;
+    font-family: 'Rubik Maps';
+    /*font-family: 'Rubik Broken Fax';*/
+    color: #fdf7f2;
+    font-size: xx-large;
+}
+header > button{
+    margin: 15px;
+    margin-right: 50px;
+    border-radius: 10px;
+    background-color: #a15517;
+    /*background-color: #209732;*/
+    color: #fdf7f2;
+    /*color: #191919;*/
+    font-weight: bold;
+    border: 0px;
+    height: 60%;
+    width: 7%;
+    font-family: inherit;
+    transition: background-color 0.5s;
+}
+header > button:hover{
+    background-color: #fdf7f2;
+    color: #191919;
+}
+aside{
+    background-color: #43230a;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    width: 15%;
+    height: 100%;
+    align-items: center;
+    padding-top: 20px;
+    z-index: 1;
+}
+#menu{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#menu > button{
+    width: 70%;
+    height: 10%;
+    border-radius: 10px;
+    border: 0px;
+    margin: 15px;
+    font-weight: bold;
+    color: #43230a;
+    background-color: #fdf7f2;
+    transition: background-color 0.5s;
+    font-family: inherit;
+}
+#menu > button:hover{
+    background-color: #191919;
+    color: #fdf7f2;
+}
+canvas{
+    display: block;
+    position: relative;
+    padding: 20px;
+    margin: auto auto;
+}
+main{
+    margin: 70px 2% 70px 17%;
+    display: grid;
+    grid-template-columns: 40% 1fr;
+    grid-template-rows: 22% 20% 1fr 1fr;
+    grid-gap: 20px;
+}
+.canvas{
+    border: 0px;
+    border-radius: 20px;
+    background-color: #191919;
+    padding: auto;
+}
+.c1{
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+}
+.c2{
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+}
+.c3{
+    grid-column: 2 / 3;
+    grid-row: 1 /3;
+}
+.c4{
+    grid-column: 1 / 3;
+    grid-row: 3 / 4;
+}
+.c5{
+    grid-column: 1 / 3;
+    grid-row: 4 / 5;
+    opacity: 50%;
+    background-color: #a39488;
+}
+.c6{
+    grid-column: 2 / 3;
+    grid-row: 4 / 5;
+    justify-self: center;
+    align-self: center;
+}
+.c5:hover{
+    z-index: 1;
+    opacity: 100%;
+    background-color: #191919;
+}
+footer{
+    height: 50px;
+    width: 100%;
+    background-color: #191919;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+}
+footer p{
+    font-size: x-small;
+    color: grey;
+    padding: 0px;
+    margin: 0px 0px 0px 20%;
+}
+
+/*
+BROWN THEME :
+background : #fdf7f2
+Dark brown : #43230a
+Light brown : #a15517
+
+GREEN THEME :
+background : #f2fcf4
+Dark green : #0d3f15
+Light green : #209732
+
+Colours for charts:
+Violet: #160C28 / #805E73
+Pink : #E5446D / #ED6A5A
+Pastel : #4B4A67 / #EDAFB8 / #F4A259
+Orange : #FE9920 / #F9A620
+Blue : #508991
+*/

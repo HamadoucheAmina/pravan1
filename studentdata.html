@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="{{url_for('static', filename='studentdata.css')}}"/>
+        <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" href="{{url_for('static', filename='img/main-logo.png')}}"/>
+        <title>Pravan University | Student Data</title>
+        
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Rubik+Broken+Fax&family=Rubik+Maps&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@600&display=swap" rel="stylesheet">
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+        <script src="{{url_for('static', filename='studentdata.js')}}"></script>
+    </head>
+    <body>
+        <header>
+            <p>Student Data : Dashboard</p>
+            <img src="{{url_for('static', filename='img/logo-header2.png')}}" style="height:50%;"/>
+            <button onclick="actualiser()">Refresh</button>
+        </header>
+        <aside>
+            <img src="{{url_for('static', filename='img/logo-aside.png')}}" style="width:80%;"/>
+            <div id="menu">
+                <button>Home</button>
+                <button>Faculties</button>
+                <button style="background-color:#191919;color:#fdf7f2;">
+                    Student Data
+                </button>
+                <button>Contact Us</button>
+            </div>
+        </aside>
+        <main>
+            <div class="canvas c1"><canvas height="300px" width="300px" id="genre_pie"></canvas></div>
+            <div class="canvas c2"><canvas height="250px" width="400px" id="bar-chart-horizontal"></canvas></div>
+            <div class="canvas c3" style="background-color:#eca46957;border:4px solid #191919">
+                <canvas height="600px" width="650px" id="spec_radar"></canvas></div>
+            <div class="canvas c4"><canvas height="400px" width="1200px" id="admitted_grouped_bar"></canvas></div>
+            <div class="canvas c5"><canvas height="400px" width="1200px" id="denied_grouped_bar"></canvas></div>
+            <div class="canvas c6">
+                <canvas height="330px" width="400px" id="line-chart" style="background-color:#191919;border-radius: 20px;"></canvas>
+            </div>
+        </main>
+        <footer>
+            <p><i>PRAVAN University© 2023 -- BOULAKHRAS Khaoula</i></p>
+            <p>Logo made by : <a href="https://www.brandcrowd.com/" target="_blank" style="color:grey">BrandCrowd</a></p>
+        </footer>
+    </body>
+</html>
